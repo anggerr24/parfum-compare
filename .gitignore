@@ -1,0 +1,11 @@
+.vercel
+
+# Cache hasil scraping (bisa di-generate ulang lewat script di tools/)
+tools/cache_fr/
+tools/cache_tp/
+tools/fdcache/
+tools/tp/
+tools/feeds/
+__pycache__/
+*.pyc
+node_modules/

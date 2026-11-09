@@ -1,0 +1,169 @@
+# id	fragrantica-id	brand	name	origin	price	size	conc	longevity	sillage
+# ---- impor (harga = perkiraan retail Indonesia) ----
+dior-sauvage-edt	31861	Dior	Sauvage EDT	Impor	2100000	100	EDT	8	8
+dior-sauvage-edp	48100	Dior	Sauvage EDP	Impor	2400000	100	EDP	8	8
+dior-sauvage-elixir	68415	Dior	Sauvage Elixir	Impor	2900000	60	X	9	8
+dior-homme-intense	13016	Dior	Dior Homme Intense	Impor	2500000	100	EDP	8	6
+dior-miss-dior-bb	23280	Dior	Miss Dior Blooming Bouquet	Impor	2300000	100	EDT	5	5
+chanel-bleu-edp	25967	Chanel	Bleu de Chanel EDP	Impor	2600000	100	EDP	8	7
+chanel-allure-sport	607	Chanel	Allure Homme Sport	Impor	2300000	100	EDT	6	6
+chanel-no5-edp	40069	Chanel	N°5 EDP	Impor	3200000	100	EDP	8	7
+chanel-chance-tendre	8069	Chanel	Chance Eau Tendre	Impor	2600000	100	EDT	6	6
+chanel-coco-mlle	611	Chanel	Coco Mademoiselle EDP	Impor	2900000	100	EDP	8	7
+ysl-y-edp	50757	Yves Saint Laurent	Y EDP	Impor	2000000	100	EDP	8	8
+ysl-libre	56077	Yves Saint Laurent	Libre EDP	Impor	2400000	90	EDP	8	7
+ysl-black-opium	25324	Yves Saint Laurent	Black Opium EDP	Impor	2300000	90	EDP	8	7
+ysl-lndlh	5521	Yves Saint Laurent	La Nuit de L'Homme	Impor	1900000	100	EDT	5	5
+armani-adg-edt	410	Giorgio Armani	Acqua di Giò EDT	Impor	1600000	100	EDT	6	6
+armani-adg-profumo	29727	Giorgio Armani	Acqua di Giò Profumo	Impor	2300000	75	EDP	8	7
+armani-swy-intensely	—	Giorgio Armani	Stronger With You Intensely	Impor	2000000	100	EDP	8	7
+armani-si	18453	Giorgio Armani	Sì EDP	Impor	2300000	100	EDP	8	7
+armani-code	412	Giorgio Armani	Armani Code	Impor	1700000	125	EDT	6	6
+versace-eros-edt	16657	Versace	Eros EDT	Impor	1400000	100	EDT	8	8
+versace-eros-flame	52180	Versace	Eros Flame	Impor	1500000	100	EDP	7	7
+versace-dylan-blue	40031	Versace	Dylan Blue	Impor	1400000	100	EDT	7	7
+versace-bright-crystal	632	Versace	Bright Crystal	Impor	1300000	90	EDT	5	5
+prada-lhomme	39029	Prada	L'Homme	Impor	2200000	100	EDT	6	5
+prada-lr-carbon	43402	Prada	Luna Rossa Carbon	Impor	1800000	100	EDT	7	7
+valentino-bir-uomo	55963	Valentino	Born in Roma Uomo	Impor	2000000	100	EDT	7	7
+valentino-bir-donna	55805	Valentino	Born in Roma Donna	Impor	2400000	100	EDP	8	7
+mugler-alien	707	Mugler	Alien EDP	Impor	2000000	60	EDP	9	8
+mugler-angel	704	Mugler	Angel EDP	Impor	2100000	50	EDP	9	9
+tomford-ombre-leather	50239	Tom Ford	Ombré Leather	Impor	4200000	100	EDP	8	7
+tomford-tobacco-vanille	1825	Tom Ford	Tobacco Vanille	Impor	4700000	50	EDP	9	8
+tomford-lost-cherry	51411	Tom Ford	Lost Cherry	Impor	4900000	50	EDP	7	7
+mfk-br540-35	33519	Maison Francis Kurkdjian	Baccarat Rouge 540 (35ml)	Impor	3500000	35	EDP	9	9
+pdm-layton	39314	Parfums de Marly	Layton	Impor	4700000	125	EDP	8	8
+pdm-delina	43871	Parfums de Marly	Delina	Impor	4900000	75	EDP	8	7
+lelabo-santal33	12201	Le Labo	Santal 33	Impor	3800000	50	EDP	8	7
+byredo-gypsy-water	3575	Byredo	Gypsy Water	Impor	3300000	50	EDP	5	5
+byredo-mojave-ghost	27040	Byredo	Mojave Ghost	Impor	3300000	50	EDP	6	5
+jomalone-wsss	25529	Jo Malone London	Wood Sage & Sea Salt	Impor	2600000	100	EDC	4	4
+jomalone-pear-freesia	10314	Jo Malone London	English Pear & Freesia	Impor	2600000	100	EDC	4	4
+kilian-ldbs	4322	Kilian	Love, Don't Be Shy	Impor	4600000	50	EDP	8	7
+kilian-angels-share	62615	Kilian	Angels' Share	Impor	4600000	50	EDP	8	8
+initio-side-effect	42260	Initio	Side Effect	Impor	4900000	90	EDP	9	8
+nishane-hacivat	44174	Nishane	Hacivat	Impor	3500000	50	X	9	8
+boss-bottled	383	Hugo Boss	Boss Bottled	Impor	1400000	100	EDT	6	6
+burberry-her	51694	Burberry	Her EDP	Impor	2200000	100	EDP	7	7
+gucci-bloom	44894	Gucci	Bloom EDP	Impor	2300000	100	EDP	7	6
+gucci-guilty-ph	11037	Gucci	Guilty Pour Homme	Impor	1700000	90	EDT	6	6
+ch-good-girl	39681	Carolina Herrera	Good Girl EDP	Impor	2000000	80	EDP	8	8
+ch-212-vip-men	12865	Carolina Herrera	212 VIP Men	Impor	1700000	100	EDT	7	7
+ck-one	276	Calvin Klein	CK One	Impor	700000	100	EDT	4	4
+ck-eternity-men	258	Calvin Klein	Eternity for Men	Impor	800000	100	EDT	6	5
+bvlgari-aqva	153	Bvlgari	Aqva Pour Homme	Impor	1400000	100	EDT	6	6
+azzaro-wanted-night	49144	Azzaro	Wanted by Night	Impor	1700000	100	EDP	8	7
+jpg-le-male-edt	430	Jean Paul Gaultier	Le Male EDT	Impor	1500000	125	EDT	7	7
+jpg-le-male-elixir	81642	Jean Paul Gaultier	Le Male Elixir	Impor	2300000	125	X	9	9
+jpg-le-beau	55785	Jean Paul Gaultier	Le Beau EDT	Impor	1900000	125	EDT	6	6
+jpg-scandal	45651	Jean Paul Gaultier	Scandal EDP	Impor	2000000	80	EDP	8	7
+rabanne-1-million	3747	Rabanne	1 Million EDT	Impor	1400000	100	EDT	8	8
+rabanne-invictus	18471	Rabanne	Invictus	Impor	1500000	100	EDT	7	7
+rabanne-phantom	68226	Rabanne	Phantom	Impor	1600000	100	EDT	7	6
+rabanne-lady-million	9045	Rabanne	Lady Million	Impor	1700000	80	EDP	8	8
+givenchy-linterdit	51488	Givenchy	L'Interdit EDP	Impor	2100000	80	EDP	7	7
+givenchy-gentleman-rp	71272	Givenchy	Gentleman Réserve Privée	Impor	2000000	100	EDP	7	7
+lancome-lveb	14982	Lancôme	La Vie Est Belle EDP	Impor	2000000	100	EDP	9	8
+dg-light-blue	485	Dolce & Gabbana	Light Blue EDT	Impor	1300000	100	EDT	5	6
+montblanc-explorer	52002	Montblanc	Explorer	Impor	1100000	100	EDP	7	6
+mm-fireplace	31623	Maison Margiela	Replica By the Fireplace	Impor	2300000	100	EDT	7	6
+ag-cloud	50384	Ariana Grande	Cloud	Impor	900000	100	EDP	7	7
+vs-bombshell	10190	Victoria's Secret	Bombshell	Impor	1500000	100	EDP	6	6
+kayali-vanilla28	52616	Kayali	Vanilla | 28	Impor	2600000	50	EDP	8	7
+lattafa-khamrah	75805	Lattafa	Khamrah	Impor	550000	100	EDP	9	8
+lattafa-khamrah-qahwa	88175	Lattafa	Khamrah Qahwa	Impor	550000	100	EDP	9	8
+lattafa-asad	72821	Lattafa	Asad	Impor	400000	100	EDP	8	8
+lattafa-yara	76880	Lattafa	Yara	Impor	400000	100	EDP	7	7
+armaf-cdni-man	34696	Armaf	Club de Nuit Intense Man	Impor	600000	105	EDT	9	9
+armaf-cdn-milestone	64104	Armaf	Club de Nuit Milestone	Impor	600000	105	EDP	7	7
+armaf-cdn-untold	78476	Armaf	Club de Nuit Untold	Impor	650000	105	EDP	8	8
+afnan-9pm	65414	Afnan	9PM	Impor	500000	100	EDP	8	8
+afnan-supremacy-noi	68271	Afnan	Supremacy Not Only Intense	Impor	700000	100	X	9	8
+rasasi-hawas	46890	Rasasi	Hawas for Him	Impor	700000	100	EDP	7	7
+zara-vibrant-leather	41963	Zara	Vibrant Leather	Impor	400000	100	EDP	6	6
+zara-gardenia	68682	Zara	Gardenia	Impor	400000	90	EDP	6	6
+# ---- lokal (harga resmi / toko, Okt 2026) ----
+hmns-orgsm	75908	HMNS	Orgsm	Lokal	524358	100	EDP	7	7
+hmns-darker-orgsm	119917	HMNS	Darker Shade of Orgsm	Lokal	612519	100	EDP	8	7
+hmns-orgsm-melting	119913	HMNS	Orgsm Melting Temptation	Lokal	607013	100	EDP	7	7
+hmns-alpha	75907	HMNS	Alpha	Lokal	524372	100	EDP	6	6
+hmns-ambar-janma	75911	HMNS	Ambar Janma	Lokal	661010	100	EDP	8	7
+hmns-the-perfection	75967	HMNS	The Perfection	Lokal	633215	100	EDP	7	7
+hmns-the-prestige	119915	HMNS	The Prestige	Lokal	633215	100	EDP	7	7
+hmns-farhampton	75909	HMNS	Farhampton	Lokal	563343	100	X	8	7
+hmns-eos	75910	HMNS	Essence of the Sun (EOS)	Lokal	563343	100	EDP	7	7
+hmns-unpatched	119916	HMNS	Unpatched	Lokal	633215	100	EDP	7	7
+hmns-addict	119914	HMNS	Addict	Lokal	568422	100	EDP	7	7
+hmns-philea	119912	HMNS	Philea	Lokal	607013	100	EDP	7	7
+hmns-sore-eterna	119911	HMNS	Sore Eterna	Lokal	607013	100	EDP	7	7
+hmns-untitled-01	119919	HMNS	Untitled Humans Aroma 01	Lokal	633215	100	EDP	7	7
+hmns-untitled-02	119920	HMNS	Untitled Humans Aroma 02	Lokal	607013	100	EDP	7	7
+saff-sotb	98611	SAFF & Co.	S.O.T.B	Lokal	235900	30	X	8	7
+saff-xocolatl	98615	SAFF & Co.	Xocolatl	Lokal	204900	35	X	8	7
+saff-solaris	98616	SAFF & Co.	Solaris	Lokal	211900	30	X	8	7
+saff-saff	98618	SAFF & Co.	Saff	Lokal	240900	30	X	8	7
+saff-loui	100306	SAFF & Co.	Loui	Lokal	185900	30	X	7	6
+saff-iliad	98614	SAFF & Co.	Iliad	Lokal	205900	30	X	8	7
+saff-irai-leima	100303	SAFF & Co.	Irai Leima	Lokal	235900	30	X	8	7
+saff-las-pozas	98610	SAFF & Co.	Las Pozas	Lokal	195900	30	X	8	7
+saff-maleali	98613	SAFF & Co.	Maleali	Lokal	205900	30	X	8	7
+saff-minouet	98612	SAFF & Co.	Minouet	Lokal	215900	30	X	8	7
+saff-morfosia	103620	SAFF & Co.	Morfosia	Lokal	223500	30	X	8	7
+saff-ostara	98617	SAFF & Co.	Ostara	Lokal	211900	30	X	8	7
+saff-troupe	100305	SAFF & Co.	Troupe	Lokal	181900	30	X	7	6
+saff-eulalie	133897	SAFF & Co.	Eulalie	Lokal	218500	30	X	8	7
+saff-chno	98619	SAFF & Co.	CHNO	Lokal	187900	30	X	8	7
+saff-omnia	98620	SAFF & Co.	Omnia	Lokal	165900	30	X	7	6
+alchemist-pink-laundry	120335	Alchemist	Pink Laundry	Lokal	249000	50	EDP	6	6
+alchemist-mojo	120331	Alchemist	Got My Mojo Back	Lokal	249000	50	EDP	7	7
+alchemist-powder-room	120336	Alchemist	Powder Room	Lokal	249000	50	EDP	6	6
+alchemist-galleria	120334	Alchemist	Galleria	Lokal	249000	50	EDP	6	6
+alchemist-musc-vanille	97939	Alchemist	Musc Vanille	Lokal	529000	50	EDP	7	5
+alchemist-musc-laiteux	97938	Alchemist	Musc Laiteux	Lokal	529000	50	EDP	7	5
+alchemist-cachemire	97937	Alchemist	Cachemire	Lokal	529000	50	EDP	7	6
+alchemist-bois-et-musc	97940	Alchemist	Bois et Musc	Lokal	529000	50	EDP	7	6
+alchemist-out-west-am	121894	Alchemist	Out West A.M.	Lokal	579000	50	X	8	7
+alchemist-out-west-pm	121895	Alchemist	Out West P.M.	Lokal	679000	50	X	8	7
+alchemist-out-west-absolu	134505	Alchemist	Out West Absolu	Lokal	789000	50	X	8	7
+mykonos-reflection	121124	Mykonos	Reflection	Lokal	449000	50	X	8	7
+mykonos-reflection-elixir	139183	Mykonos	Reflection Elixir	Lokal	449000	50	X	8	7
+mykonos-penthouse	121121	Mykonos	Penthouse	Lokal	449000	50	X	8	7
+mykonos-california	121150	Mykonos	California	Lokal	449000	50	X	8	7
+mykonos-california-blue	120464	Mykonos	California Blue	Lokal	449000	50	X	8	7
+mykonos-california-club	120465	Mykonos	California Club	Lokal	449000	50	X	8	7
+mykonos-monaco-royale	121113	Mykonos	Monaco Royale	Lokal	449000	50	X	8	7
+mykonos-royal-ispahan	121127	Mykonos	Royal Ispahan	Lokal	449000	50	X	8	7
+mykonos-inception	121107	Mykonos	Inception	Lokal	449000	50	X	8	7
+mykonos-dreamscape	121104	Mykonos	Dreamscape	Lokal	449000	50	X	8	7
+mykonos-enchanted	121105	Mykonos	Enchanted	Lokal	449000	50	X	8	7
+mykonos-aphrodite	120455	Mykonos	Aphrodite	Lokal	449000	50	X	8	7
+mykonos-silent-whisper	121131	Mykonos	Silent Whisper	Lokal	449000	50	X	8	7
+mykonos-sorrento	121134	Mykonos	Sorrento	Lokal	449000	50	X	8	7
+mykonos-slow-living	121132	Mykonos	Slow Living	Lokal	449000	50	EDP	7	6
+mykonos-bonfire-vanilla	120462	Mykonos	Bonfire Vanilla	Lokal	449000	50	X	8	7
+mykonos-vanilla-clouds	121139	Mykonos	Vanilla Clouds	Lokal	449000	50	X	8	7
+mykonos-coconut-dreams	120468	Mykonos	Coconut Dreams	Lokal	449000	50	X	8	7
+mykonos-black-opera	120458	Mykonos	Black Opera	Lokal	799000	100	X	8	7
+mykonos-dark-secret	120470	Mykonos	Dark Secret	Lokal	799000	100	X	8	7
+mykonos-moroccan-vanilla	121114	Mykonos	Moroccan Vanilla	Lokal	799000	100	X	8	7
+mykonos-musk-aura	121116	Mykonos	Musk Aura	Lokal	799000	100	X	8	7
+mykonos-crimson	120469	Mykonos	Crimson	Lokal	799000	100	X	8	7
+mykonos-empire	136806	Mykonos	Empire	Lokal	499000	50	X	8	7
+mykonos-luminos	121110	Mykonos	Luminos	Lokal	599000	50	X	8	7
+p1945-sunset-in-sumba	83910	Project 1945	Sunset in Sumba	Lokal	325000	100	EDP	7	6
+p1945-fields-of-ubud	83912	Project 1945	Fields of Ubud	Lokal	325000	100	EDP	7	6
+p1945-princess-of-java	83911	Project 1945	Princess of Java	Lokal	325000	100	EDP	7	6
+p1945-great-batavia	83909	Project 1945	The Great Batavia	Lokal	345000	100	X	8	7
+p1945-waters-of-maluku	83913	Project 1945	Waters of Maluku	Lokal	345000	100	X	8	7
+oaken-batavia-barber	82651	Oaken Lab	Batavia Barber	Lokal	899000	50	EDP	7	6
+oaken-conservatory	82652	Oaken Lab	Conservatory	Lokal	849000	50	EDP	7	6
+oaken-earth-of-mankind	82653	Oaken Lab	Earth of Mankind	Lokal	899000	50	EDP	7	6
+oaken-far-afield	82650	Oaken Lab	Far Afield	Lokal	799000	50	EDP	7	6
+oaken-plein-air	82655	Oaken Lab	Plein Air	Lokal	799000	50	EDP	7	6
+oaken-sanctum	82649	Oaken Lab	Sanctum	Lokal	849000	50	EDP	7	6
+studio-sable-heure-doree	90893	Studio Sable	L'Heure Dorée	Lokal	588000	50	EDP	7	6
+studio-sable-ikebana	90891	Studio Sable	Ikebana	Lokal	588000	50	EDP	7	6
+studio-sable-rainshower	90892	Studio Sable	Rainshower Sacra	Lokal	588000	50	EDP	7	6
+kahf-revered-oud	92941	Kahf	Revered Oud	Lokal	289000	100	EDP	6	6
+velixir-ares	127591	Velixir	Ares	Lokal	445000	100	EDP	7	7

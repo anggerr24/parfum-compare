@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Banding Parfum</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    // Pasang tema sebelum render biar nggak kedip.
+    try { const t = localStorage.getItem("parfum.theme"); if (t) document.documentElement.dataset.theme = t; } catch {}
+  </script>
+</head>
+<body>
+  <header class="hero">
+    <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+    <nav class="topbar wrap">
+      <a class="logo" href="#">✦ Banding Parfum</a>
+      <div class="top-actions">
+        <button id="favToggle" class="ghost-btn" type="button" aria-pressed="false">
+          <svg viewBox="0 0 24 24" class="ic"><path d="M12 21s-7.5-4.6-9.5-9.2C1.2 8.6 3.4 5 6.9 5c2 0 3.4 1.1 4.1 2.3C11.7 6.1 13.1 5 15.1 5c3.5 0 5.7 3.6 4.4 6.8C19.5 16.4 12 21 12 21z"/></svg>
+          Favorit <span id="favCount" class="count-pill">0</span>
+        </button>
+        <button id="themeBtn" class="icon-btn" type="button" aria-label="Ganti tema">
+          <svg viewBox="0 0 24 24" class="ic"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+      </div>
+    </nav>
+    <div class="hero-inner wrap">
+      <p class="eyebrow">Lokal &amp; impor · harga · kualitas · notes</p>
+      <h1>Cari parfum yang <em>paling worth it</em> buat kamu.</h1>
+      <p class="lead">Bandingin harga per ml, ketahanan, rating, sampai piramida notes-nya — dari brand lokal kesayangan sampai designer &amp; niche.</p>
+      <label class="searchbox">
+        <svg viewBox="0 0 24 24" class="ic"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="Cari parfum, merek, atau wangi — mis. melati, kopi, segar…" autocomplete="off" />
+        <kbd>/</kbd>
+      </label>
+      <div class="hero-cta">
+        <button class="btn" type="button" id="quizBtn">✨ Kuis: parfum buat kamu</button>
+        <button class="ghost-btn" type="button" id="dupeBtn">🔁 Cari dupe lokal</button>
+      </div>
+      <div class="stats">
+        <div><b data-stat="perfumes">0</b><span>parfum</span></div>
+        <div><b data-stat="brands">0</b><span>merek</span></div>
+        <div><b data-stat="local">0</b><span>parfum lokal</span></div>
+        <div><b data-stat="notes">0</b><span>notes unik</span></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="brands wrap" id="brands">
+    <div class="section-head">
+      <div>
+        <h2>Jelajahi per merek</h2>
+        <p class="muted">Klik merek buat lihat semua parfumnya.</p>
+      </div>
+      <button id="brandMore" class="ghost-btn" type="button">Tampilkan semua merek</button>
+    </div>
+    <div id="brandGrid" class="brand-wrap collapsed"></div>
+  </section>
+
+  <section class="best wrap" id="best">
+    <div class="section-head">
+      <div>
+        <h2>🏆 Paling worth it</h2>
+        <p class="muted">Ranking skor value: kualitas (rating, ketahanan, proyeksi) dibanding harga per ml. Dihitung otomatis dari data.</p>
+      </div>
+      <label class="best-real"><input type="checkbox" id="bestReal" /> <span>Cuma yang ratingnya dari review asli</span></label>
+    </div>
+    <div class="best-tabs" id="bestTabs" role="tablist" aria-label="Kategori"></div>
+    <div id="bestBody"></div>
+  </section>
+
+  <div class="toolbar" id="toolbar">
+    <div class="wrap toolbar-inner">
+      <div class="seg" id="originSeg" role="group" aria-label="Asal">
+        <button data-v="" class="on">Semua</button><button data-v="Lokal">Lokal</button><button data-v="Impor">Impor</button>
+      </div>
+      <div class="seg" id="genderSeg" role="group" aria-label="Gender">
+        <button data-v="" class="on">Semua</button><button data-v="Pria">Pria</button><button data-v="Wanita">Wanita</button><button data-v="Unisex">Unisex</button>
+      </div>
+      <select id="family" aria-label="Family"><option value="">Semua family</option></select>
+      <select id="occasion" aria-label="Acara &amp; cuaca"><option value="">Semua acara</option></select>
+      <select id="sort" aria-label="Urutan">
+        <option value="value">Value terbaik</option>
+        <option value="rating">Rating tertinggi</option>
+        <option value="quality">Kualitas tertinggi</option>
+        <option value="price-asc">Harga termurah</option>
+        <option value="price-desc">Harga termahal</option>
+        <option value="ppm">Harga/ml termurah</option>
+        <option value="longevity">Paling awet</option>
+      </select>
+      <label class="range">
+        <span>Maks <output id="maxPriceOut"></output></span>
+        <input id="maxPrice" type="range" step="50000" />
+      </label>
+      <div class="notefilter">
+        <input id="noteInput" list="noteList" placeholder="+ filter notes" autocomplete="off" />
+        <datalist id="noteList"></datalist>
+      </div>
+      <div class="seg" id="viewSeg" role="group" aria-label="Tampilan">
+        <button data-v="brand" class="on" title="Kelompokkan per merek">Per merek</button><button data-v="grid" title="Semua jadi satu grid">Grid</button>
+      </div>
+      <button id="addBtn" class="ghost-btn" type="button">+ Tambah</button>
+    </div>
+    <div class="wrap active-filters" id="activeFilters"></div>
+  </div>
+
+  <main class="wrap" id="results" aria-live="polite"></main>
+
+  <footer class="wrap foot muted small">
+    Rating dari Female Daily &amp; Fragrantica (sisanya estimasi), notes dari toko resmi/Fragrantica.
+    Harga lokal dicek di toko resmi (Okt 2026), harga impor perkiraan. Ketahanan, proyeksi &amp; tag acara = perkiraan.
+    Foto produk milik masing-masing brand.
+  </footer>
+
+  <div id="tray" class="tray">
+    <div class="wrap tray-inner">
+      <div id="trayItems" class="tray-items"></div>
+      <span id="trayHint" class="muted small"></span>
+      <button id="clearCompare" class="ghost-btn" type="button">Kosongkan</button>
+      <button id="openCompare" class="btn" type="button">Bandingkan</button>
+    </div>
+  </div>
+
+  <dialog id="detailDlg" class="dlg wide"><div id="detailBody"></div></dialog>
+  <dialog id="compareDlg" class="dlg xwide">
+    <div class="dlg-head"><h2>Perbandingan</h2><button class="x" data-close aria-label="Tutup">×</button></div>
+    <div id="compareBody" class="table-scroll"></div>
+  </dialog>
+  <dialog id="similarDlg" class="dlg">
+    <div class="dlg-head"><h2 id="similarTitle">Parfum mirip</h2><button class="x" data-close aria-label="Tutup">×</button></div>
+    <div id="similarBody"></div>
+  </dialog>
+
+  <dialog id="quizDlg" class="dlg">
+    <div class="dlg-head"><h2>Parfum buat kamu</h2><button class="x" data-close aria-label="Tutup">×</button></div>
+    <form id="quizForm" class="quiz">
+      <fieldset><legend>Buat siapa?</legend>
+        <label><input type="radio" name="gender" value="" checked><span>Bebas</span></label>
+        <label><input type="radio" name="gender" value="Pria"><span>Pria</span></label>
+        <label><input type="radio" name="gender" value="Wanita"><span>Wanita</span></label>
+      </fieldset>
+      <fieldset><legend>Suka wangi yang gimana?</legend>
+        <label><input type="radio" name="vibe" value="segar" checked><span>🍋 Segar</span></label>
+        <label><input type="radio" name="vibe" value="manis"><span>🍯 Manis</span></label>
+        <label><input type="radio" name="vibe" value="bunga"><span>🌸 Bunga / bersih</span></label>
+        <label><input type="radio" name="vibe" value="kayu"><span>🪵 Kayu &amp; rempah</span></label>
+      </fieldset>
+      <fieldset><legend>Paling sering dipakai buat?</legend>
+        <label><input type="radio" name="occasion" value="kantor" checked><span>Kantor / kampus</span></label>
+        <label><input type="radio" name="occasion" value="kencan"><span>Kencan</span></label>
+        <label><input type="radio" name="occasion" value="santai"><span>Santai</span></label>
+        <label><input type="radio" name="occasion" value="formal"><span>Kondangan / formal</span></label>
+      </fieldset>
+      <fieldset><legend>Budget maksimal</legend>
+        <label><input type="radio" name="budget" value="300000"><span>300rb</span></label>
+        <label><input type="radio" name="budget" value="600000" checked><span>600rb</span></label>
+        <label><input type="radio" name="budget" value="1500000"><span>1,5jt</span></label>
+        <label><input type="radio" name="budget" value="5000000"><span>5jt</span></label>
+      </fieldset>
+      <fieldset><legend>Lokal atau impor?</legend>
+        <label><input type="radio" name="origin" value="" checked><span>Bebas</span></label>
+        <label><input type="radio" name="origin" value="Lokal"><span>Lokal aja</span></label>
+        <label><input type="radio" name="origin" value="Impor"><span>Impor aja</span></label>
+      </fieldset>
+      <button class="btn" type="submit">Cariin ✨</button>
+    </form>
+    <div id="quizResult"></div>
+  </dialog>
+
+  <dialog id="dupeDlg" class="dlg">
+    <div class="dlg-head"><h2>Dupe lokal</h2><button class="x" data-close aria-label="Tutup">×</button></div>
+    <p class="muted small">Pilih parfum impor, nanti muncul parfum lokal yang notes-nya paling mirip. Kemiripan dihitung dari
+      notes yang sama — bukan jaminan wanginya identik.</p>
+    <select id="dupeSelect" aria-label="Parfum impor"></select>
+    <div id="dupeBody"></div>
+  </dialog>
+
+  <dialog id="addDlg" class="dlg">
+    <form id="addForm">
+      <div class="dlg-head">
+        <h2>Tambah parfum</h2>
+        <button class="x" type="button" data-close aria-label="Tutup">×</button>
+      </div>
+      <div class="form-grid">
+        <label>Nama <input name="name" required /></label>
+        <label>Merek <input name="brand" list="brandList" required /></label>
+        <datalist id="brandList"></datalist>
+        <label>Asal
+          <select name="origin"><option>Lokal</option><option>Impor</option></select>
+        </label>
+        <label>Gender
+          <select name="gender"><option>Pria</option><option>Wanita</option><option>Unisex</option></select>
+        </label>
+        <label>Family <input name="family" list="familyList" required placeholder="Woody, Fresh…" /></label>
+        <datalist id="familyList"></datalist>
+        <label>Konsentrasi
+          <select name="conc"><option value="EDP">EDP</option><option value="EDT">EDT</option><option value="X">Extrait</option><option value="EDC">Cologne</option></select>
+        </label>
+        <label>Harga (Rp) <input name="price" type="number" min="1000" step="1000" required /></label>
+        <label>Ukuran (ml) <input name="size" type="number" min="1" required /></label>
+        <label>Ketahanan (1–10) <input name="longevity" type="number" min="1" max="10" required /></label>
+        <label>Proyeksi (1–10) <input name="sillage" type="number" min="1" max="10" required /></label>
+        <label>Rating (1–10) <input name="rating" type="number" min="1" max="10" step="0.1" required /></label>
+        <label class="full">Top notes <input name="top" placeholder="pisah pakai koma" /></label>
+        <label class="full">Middle notes <input name="middle" placeholder="pisah pakai koma" /></label>
+        <label class="full">Base notes <input name="base" placeholder="pisah pakai koma" /></label>
+        <label>Foto (upload) <input name="imageFile" type="file" accept="image/*" /></label>
+        <label>…atau URL gambar <input name="imageUrl" type="url" placeholder="https://…" /></label>
+      </div>
+      <p class="muted small">Disimpan di browser ini aja (localStorage).</p>
+      <div class="dlg-foot"><button class="btn" type="submit">Simpan</button></div>
+    </form>
+  </dialog>
+
+  <button id="toTop" class="to-top" type="button" data-to-top aria-label="Balik ke atas">⬆</button>
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+
+  <script src="data.js"></script>
+  <script src="scent.js"></script>
+  <script src="search.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
